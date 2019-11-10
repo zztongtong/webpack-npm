@@ -5,10 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="device-width,initial-scale=1.0">
     <title>demo</title>
-    
+    <style>
+      .parentDiv{
+       border:1px solid black;
+       width:100%;
+       height:100%;
+       position:relative;
+       }
+       .childDiv1{
+           border:1px solid gray;
+           width:100%;
+           height: 50px;
+       }
+       .childDiv2{
+           position:absolute;
+           top:50px;
+           left:0;
+           right:0;
+           bottom:0;
+       }
+      </style>
 </head>
   <body>
-      
+    <div style="height:500px;">
+      <div id="zzteditor" class="parentDiv">
+          <div id="toolbar" class="childDiv1">
+              <span>加粗</span>
+          </div>
+          <div id="textcontent" class="childDiv2"></div>
+      </div>
+  </div>  
   </body>
   
 </html>
